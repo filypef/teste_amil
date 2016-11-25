@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+      
+        <title>Amil</title>
+
+		<script type="text/javascript">
+		var data=[];
+		var item = function(){
+		                return {"nome": "", "telefone":"", "email":"", "cep": ""}
+		            };
+		var template = "<li> <span>Nome:</span> <p>#nome</p> </li> <li> <span>Telefone:</span> <p>#telefone</p> </li> <li> <span>Email:</span> <p>#email</p> </li><li> <span>CEP:</span> <p>#cep</p><button onClick='sub(#index)' /> </li> ";
+
+		function add(){
+		    var campos = document.getElementsByClassName('content-form')[0].getElementsByTagName('input');
+		    var count = campos.length;
+		    var regiter =  item();
+
+		    for (var i=0; i<count; i++){
+		      if (regiter.hasOwnProperty(campos[i].id)){
+		        regiter[campos[i].id] = campos[i].value;
+		      }
+		    }
+		    data.push(regiter);
+		    writeList();
+		}
+
+		function sub(index){
+		    data.splice(index, 1);
+		    writeList();
+		}
+
+		function writeList(){
+		    var count = data.length;
+		    var html_content = "";
+		    var line = "";
+		    for (i=0; i<count; i++){
+		        line = template;
+
+		        for (var prop in data[i]){
+		            line = line.replace("#" + prop, data[i][prop])
+		        }
+		        line = line.replace("#index", i);
+		        html_content += line;
+		    }
+		    document.getElementsByClassName("registers")[0].innerHTML = html_content;      
+		}
+
+		function letras(e){
+			var regra = /[^a-zA-Z]/g;
+			e.value = e.value.replace(regra,'');
+		}
+
+		function numeros(e){
+			var regra = /[a-zA-Z]/g;
+			e.value = e.value.replace(regra,'');
+		}
+
+		function validaemail(e){
+			var regra = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}/;
+			if(!regra.test(e.value))
+				e.value = "";
+		}
+
+		</script>
+
+    </head>
+    <body>
+  
+        <form  class="content-form">
+            <div class="input">
+                <label>Nome:</label>
+                <input type="text" name="nome" id="nome" onblur="letras(this)" />
+            </div>
+            <div class="input">
+                <label>Telefone:</label>
+                <input type="text" name="telefone" id="telefone" onblur="numeros(this);" />
+            </div>
+            <div class="input">
+                <label>E-mail:</label>
+                <input type="text" name="email" id="email" onblur="validaemail(this);"  />
+            </div>
+          
+            <div class="input">
+                 <input type="buttom" value="Enviar" onClick="add()" class="bt-enviar" />
+            </div>
+        </form>
+        <div class="result">
+            <p>meus registros:</p>
+            <div >
+                <ul class="registers">
+                    <li>nenhum registro incluido.</li>
+                </ul>                
+            </div>
+        </div>
+      </body>
+</html>

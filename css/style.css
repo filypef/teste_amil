@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/*--INICIO FONTES--*/
+@font-face{
+	font-family: 'Open Sans Regular';
+	src: url("../font/OpenSans-Regular.ttf");
+}
+
+@font-face{
+	font-family: 'Open Sans Bold';
+	src: url("../font/OpenSans-Bold.ttf");
+}
+
+@font-face{
+	font-family: 'Open Sans Semibold';
+	src: url("../font/OpenSans-Semibold.ttf");
+}
+
+@font-face{
+	font-family: 'Open Sans Ligth';
+	src: url("../font/OpenSans-Light.ttf");
+}
+/*--FIM FONTES--*/
+
+/*--INICIO DEFAULT--*/
+*{ margin:0; padding:0; }	
+
+body{ background: #ffffff; color: #898989; }
+
+a{ color: #898989; text-decoration: none; }
+
+.grid-100{ width: 100%; }
+
+.back_cinza1{ background-color:#eeeeee; border-bottom: 1px solid #c9c9c9; }
+
+.back_cinza2{ background-color:#c9c9c9; }
+/*--FIM DEFAULT--*/
+
+
+/*--TOPO--*/
+/*--LOGO--*/
+.header-wrapper { width: 940px; height: 60px; margin: 0 auto; box-sizing: border-box; }
+
+.logo_shadow { background-color: #ffffff; width: 118px; height: 110px; background-color: #ffffff; padding: 5px; box-shadow: 0px 0px 10px rgba(0,0,0,.2); float: left; }
+/*--FIM LOGO*/
+
+/*--INICIO BOTAO--*/
+aside#btn_interdum{ border: 1px solid #f7941e; border-radius: 2px; background-color: #f7941e; width: 140px; padding: 5px; margin-top: 12px; font-family: 'Open Sans Bold'; font-size: 16px; color: #f7941e; text-align: center; 
+	position: relative;	float: right; transition: background-color 1s; -webkit-transition: background-color 1s; -moz-transition: background-color 1s; -ms-transition: background-color 1s; }
+
+aside#btn_interdum:hover{ border: 1px solid #f7941e; background-color: #eebd71; }
+
+aside#btn_interdum a{ color: #ffffff;}
+/*--INICIO BOTAO--*/
+
+/*--INICIO MENU--*/
+nav#header-menu{ font-family: 'Open Sans Semibold';	font-size: 16px; }
+
+nav#header-menu ul{	margin: 10px 30px; float: left;	list-style: none; box-sizing: border-box;}
+
+nav#header-menu ul li{ padding: 10px 30px; display: inline-block; }
+
+nav#header-menu ul li + li{	border-left: 1px solid #c9c9c9; }
+/*--FIM MENU--*/
+
+
+/*--INICIO BOTAO*/
+aside#breadcrumb-wrapper{ width: 940px; margin: 16px auto; font-family: 'Open Sans Regular'; font-size: 12px; box-sizing: border-box;}
+
+aside#breadcrumb-wrapper ul#breadcrumb{list-style: none; margin-left: 150px;}
+
+aside#breadcrumb-wrapper ul#breadcrumb li{display: inline-block; padding: 0 5px;}
+/*--FIM BOTAO--*/
+
+
+/*--INICIO FIGURE*/
+aside#figure-wrapper{ width: 940px; height: 245px; margin: 40px auto; display: block; box-sizing: border-box; }
+
+aside#figure-wrapper #figure-one{ float: left; }
+
+aside#figure-wrapper #figure-one img{ width: 700px; height: 245px; border: 1px solid #c9c9c9; box-sizing: border-box; }
+
+aside#figure-wrapper #figure-two{ float: right; }
+
+aside#figure-wrapper #figure-two img{ border: 3px solid #ec007a; border-radius: 2px; width: 220px; height: 245px; box-sizing: border-box; }
+/*--FIM FIGURE--*/
+
+/**--INICIO WRAPPER CONTEUDO--*/
+.container-wrapper{ width:940px; margin: 40px auto 0 auto; overflow: hidden; font-family: 'Open Sans Regular'; font-size: 16px; }
+
+/*--INICIO MENU LATERAL--*/
+aside#menu-lateral-wrapper{ border: 1px solid #ececec; width: 220px; padding: 16px;	float: left; box-sizing: border-box; }
+
+aside#menu-lateral-wrapper h1{ border-bottom: 1px solid #c9c9c9;  padding-bottom: 10px; margin-bottom: 20px; font-family: 'Open Sans Regular';	font-size: 16px; color: #f4941e; }
+
+
+aside#menu-lateral-wrapper li{ padding: 3px; font-family: 'Open Sans Regular'; font-size: 14px; list-style: none; }
+
+aside#menu-lateral-wrapper ul#menu-lateral li.titulo, li.titulo a{ margin: 10px 0; font-family: 'Open Sans Bold'; font-size: 14px; color: #20b7ce; }
+
+aside#menu-lateral-wrapper ul#menu-lateral li.titulo img{ margin-right: 7px; }
+/*--FIM MENU LATERAL--*/
+
+/*--INICIO CONTEUDO--*/
+section#conteudo-wrapper{ width: 460px; float: left; margin-left: 20px;	font-family: 'Open Sans Regular'; font-size: 16px; }
+
+section#conteudo-wrapper h1{ border-bottom: 1px solid #c9c9c9; padding-bottom: 20px;  margin-bottom: 20px; font-family: 'Open Sans Ligth'; font-size: 20px; color: #ec007a; }
+/*--INICIO CONTEUDO--*/
+
+/*--INICIO FIGURE LATERAL*/
+aside#figure-lateral-wrapper{ width: 220px; float: right; }
+
+aside#figure-lateral-wrapper h1{ border-bottom: 1px solid #c9c9c9; padding-bottom: 20px; margin-bottom: 20px; font-family: 'Open Sans Ligth'; font-size: 20px; color: #ec007a; }
+
+aside#figure-lateral-wrapper img{ border-radius: 10px; }
+/*--FIM FIGURE LATERAL*/
+
+/*--INICIO FIGURE CENTRAL*/
+aside#figure-central-wrapper{ width: 700px; height: 200px; 	margin: 40px auto; float: right; }
+
+aside#figure-central-wrapper #figure-food{ position: relative; }
+
+aside#figure-central-wrapper #figure-food img{ width: 100%; height: 100%; }
+
+aside#figure-central-wrapper #figure-food figcaption{ background-color: rgba(0,0,0,.4); width: 100%; height: 20%; padding: 10px; top: 159px; position: absolute; font-family: 'Open Sans Semibold';
+	font-size: 16px; color: #ffffff; box-sizing: border-box; }
+/*--FIM FIGURE CENTRAL*/
+
+/*--INICIO BOX*/
+aside.box-wrapper{ border: 1px solid #f7941e; width: 220px; min-height:190px; padding: 30px 0; float: left; margin: 0 0 80px 20px; font-family: 'Open Sans Ligth'; font-size: 13px; text-align: center;
+	box-sizing: border-box; overflow: hidden;}
+
+aside.box-wrapper img{ margin-bottom: 16px; height: 54px; width: 54px; }
+/*--FIM BOX*/
+
+/**-FIM WRAPPER CONTEUDO--*/
+
+/*--INICIO RODAPE--*/
+#footer-wrapper{ width: 940px; margin: 0 auto; font-family: 'Open Sans Regular'; font-size: 13px;}
+
+#footer-wrapper h1{ margin-top: 40px; font-family: 'Open Sans Regular'; font-size: 20px; }
+
+#footer-wrapper h2{	margin: 20px 0; font-family: 'Open Sans Bold'; font-size: 16px;	}
+
+#footer-wrapper p{ margin-top: 40px; font-family: 'Open Sans Bold'; font-size: 13px; text-decoration: underline; }
+
+#footer-auctor-commod{ border-bottom: 1px solid #c9c9c9; width: 940px; overflow: hidden; margin-bottom: 30px;}
+
+/*--INICIO MENU LATERAL ESQUERDA--*/
+#footer-wrapper-left{ width: 486px;	float: left;}
+
+#footer-wrapper-left #footer-wrapper-left-menu-left{ width: 160px; float: left; overflow: hidden; }
+
+#footer-wrapper-left #footer-wrapper-left-menu-left ul#menu-left{ width: 160px; list-style: none; }
+
+#footer-wrapper-left #footer-wrapper-left-menu-left ul#menu-left li{ margin-bottom: 10px; }
+
+#footer-wrapper-left #footer-wrapper-left-menu-center{ margin-top:130px; width: 160px; float: left; }
+
+#footer-wrapper-left #footer-wrapper-left-menu-center ul#menu-center{ width: 160px; list-style: none; float: left; }
+
+#footer-wrapper-left #footer-wrapper-left-menu-center ul#menu-center li{ margin-bottom: 14px; }
+
+#footer-wrapper-left #footer-wrapper-left-menu-right{ width: 160px;  margin-top:67px ;float: right; }
+
+#footer-wrapper-left #footer-wrapper-left-menu-right ul#menu-right{ width: 160px; list-style: none;	float: right; }
+
+#footer-wrapper-left #footer-wrapper-left-menu-right ul#menu-right li{ padding-bottom: 14px; }
+/*--FIM MENU LATERAL DIREITA--*/
+
+/*--INICIO MENU LATERAL DIREITA--*/
+#footer-wrapper-right{ width: 260px; height: 300px;	float: right; overflow: hidden;}
+
+#footer-wrapper-right #footer-wrapper-right-menu-left #menu-left{ width: 100px;	margin-top:30px; float: left; }
+
+#footer-wrapper-right #footer-wrapper-right-menu-left ul#menu-left{ list-style: none; }
+
+#footer-wrapper-right #footer-wrapper-right-menu-left ul#menu-left li{ margin-bottom: 20px; }
+
+#footer-wrapper-right #footer-wrapper-right-menu-right #menu-right{ margin-top:30px; margin-left: 30px; width: 100px; float: left; }
+
+#footer-wrapper-right #footer-wrapper-right-menu-right ul#menu-right{ list-style: none; }
+
+#footer-wrapper-right #footer-wrapper-right-menu-right ul#menu-right li{ margin-bottom: 20px; }
+/*--INICIO MENU LATERAL DIREITA--*/
+/*--INICIO RODAPE--*/
+
+/*--INICIO RODAPE INSTITUCIONAL--*/
+#footer-wrapper-institucional{ width: 940px; margin-bottom: 30px; font-family: 'Open Sans Semibold'; font-size: 13px; overflow: hidden; box-sizing: border-box; }
+
+#footer-wrapper-institucional  ul li{ padding-right: 10px; display: inline-block; }
+
+#footer-wrapper-institucional  ul li + li{ border-left: 1px solid #c9c9c9; padding-left: 10px; }
+
+#footer-wrapper-institucional #footer-wrapper-institucional-menu-left ul#menu-left{ list-style: none; float: left; }
+
+#footer-wrapper-institucional #footer-wrapper-institucional-menu-right ul#menu-right{ list-style: none;	float: right; }
+/*--FIM RODAPE INSTITUCIONAL--*/
+
+
+/*--INICIO COPYRIGHT--*/
+#footer-wrapper-copyright{ background-color: #c9c9c9; width: 940px; margin: 0 auto; padding: 30px 0 80px 0; font-family: 'Open Sans Semibold'; font-size: 13px; text-align: center; }
+/*--FIM COPYRIGHT--*/
